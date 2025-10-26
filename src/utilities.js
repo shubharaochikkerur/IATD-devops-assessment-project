@@ -119,12 +119,12 @@ export function generateFlightId(airline) {
         return undefined;
     }
 
-   // airline = airline; why is this line of code required? shubha unless we need
-    this.airline = airline;
+   // airline = airline; why is this line of code required? 
+    
 
     let digits = [];
     for (let i = 0; i < 3; i++) {
         digits[i] = Math.round(Math.random() * 9);
     }
-    return this.airline.substring(0, 2).toUpperCase().concat(digits[0].toString(), digits[1].toString(), digits[2].toString());
+    return airline.substring(0, 2).toUpperCase().concat(digits[0].toString(), digits[1].toString(), digits[2].toString());
 }
