@@ -18,6 +18,6 @@ jobs:
               uses: docker/build-push-action@v5
               with:
                 context: .
-                file: ./Dockerfiles/test.dockerfile
+                file: ./Dockerfiles/test.Dockerfile
                 push: true
                 tags: ${{ secrets.DOCKERHUB_USERNAME }}/rao-chikkerur-shubha-intro-to-devops-a2:test-latest
