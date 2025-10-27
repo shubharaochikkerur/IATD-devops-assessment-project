@@ -118,9 +118,7 @@ export function generateFlightId(airline) {
     if (airline.trim() === "") {
         return undefined;
     }
-
    // airline = airline; why is this line of code required? 
-    
 
     let digits = [];
     for (let i = 0; i < 3; i++) {

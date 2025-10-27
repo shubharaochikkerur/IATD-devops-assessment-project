@@ -91,7 +91,6 @@ test("isValidDateString: invalid string", () => {
   });
 
   ///// PUT YOUR TESTS FOR generateFlightId HERE /////
-
   // Test uppercase
   test("generateFlightId: is uppercase", () => {
     expect(generateFlightId("Qantas").substring(0, 2)).toBe("QA");
