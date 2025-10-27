@@ -1,9 +1,9 @@
 FROM node:20.12-alpine
 
-COPY package.json package-lock.json ./
+WORKDIR /app
+
+COPY . .
 
 RUN npm install
-
-COPY ./ ./
 
 CMD [ "npm", "test" ]
